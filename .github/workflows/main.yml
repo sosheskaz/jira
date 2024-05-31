@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: add gox
-        run: go install github.com/mitchellh/gox
       - name: make binaries
         run: make all
       - name: perform tests
