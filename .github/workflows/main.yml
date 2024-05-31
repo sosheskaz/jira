@@ -13,7 +13,7 @@ jobs:
         go: ['1.22']
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: make binaries
         run: make all
       - name: perform tests
